@@ -119,7 +119,7 @@ class MysqliDb
      *
      * @var array
      */
-    protected $_tableLocks = array();
+    // protected $_tableLocks = array();
 
     /**
      * Variable which holds the current table lock method.
