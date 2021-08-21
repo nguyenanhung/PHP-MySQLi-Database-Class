@@ -1,5 +1,5 @@
 {
-    "name": "thingengineer/mysqli-database-class",
+    "name": "nguyenanhung/mysqli-database",
     "description": "PHP MySQL Wrapper and object mapper which utilizes MySQLi and prepared statements",
     "license": "GPL-3.0-or-later",
     "authors": [
@@ -12,14 +12,23 @@
         {
             "name": "Alexander V. Butenko",
             "email": "a.butenka@gmail.com",
-            "homepage": "http://smarttechdo.com",
+            "homepage": "https://smarttechdo.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Nguyen An Hung",
+            "email": "dev@nguyenanhung.com",
+            "homepage": "https://nguyenanhung.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "ext-json": "*"
     },
     "autoload": {
-        "files": ["MysqliDb.php", "dbObject.php"]
+        "psr-4": {
+            "nguyenanhung\\MySQLi\\": "src/"
+        }
     }
 }

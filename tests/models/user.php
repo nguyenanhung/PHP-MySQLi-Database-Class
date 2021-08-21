@@ -14,7 +14,7 @@
  * @property string expires
  * @property int loginCount
  */
-class user extends dbObject {
+class user extends nguyenanhung\MySQLi\DbObject {
     protected $dbTable = "users";
     protected $dbFields = Array (
         'login' => Array ('text', 'required'),

@@ -1,5 +1,5 @@
 <?php
-require_once ("../MysqliDb.php");
+require_once("../src/MysqliDb.php");
 error_reporting(E_ALL);
 
 function pretty_print($array) {
@@ -9,13 +9,13 @@ function pretty_print($array) {
 }
 
 $prefix = 't_';
-$db = new Mysqlidb('localhost', 'root', '', 'testdb');
+$db = new nguyenanhung\MySQLi\MysqliDb('localhost', 'root', '', 'testdb');
 if(!$db) die("Database error");
 
 $mysqli = new mysqli ('localhost', 'root', '', 'testdb');
-$db = new Mysqlidb($mysqli);
+$db = new nguyenanhung\MySQLi\MysqliDb($mysqli);
 
-$db = new Mysqlidb(Array (
+$db = new nguyenanhung\MySQLi\MysqliDb(Array (
                 'host' => 'localhost',
                 'username' => 'root',
                 'password' => '',

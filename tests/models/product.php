@@ -7,7 +7,7 @@
  * @property int customerId
  * @property string productName
  */
-class product extends dbObject {
+class product extends nguyenanhung\MySQLi\DbObject {
     protected $dbTable = "products";
     protected $primaryKey = "id";
     protected $dbFields = Array (
